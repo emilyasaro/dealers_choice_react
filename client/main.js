@@ -19,8 +19,8 @@ class Main extends React.Component{
 
   }
   async componentDidMount(){
-    const months = await axios.get('/api/months').data;
-    const customers = await axios.get('/api/customers').data;
+    const months = (await axios.get('/api/months')).data;
+    const customers = (await axios.get('/api/customers')).data;
     console.log(months);
     this.setState({ months, customers });
   }

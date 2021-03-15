@@ -6,9 +6,8 @@ const Customers = (props) => {
       <ul className="customer">
       {props.customers.map((customer) => {
         return (
-          <div key={customer.id} className={customer.name}>
-            {customer.name}
-            <li> {customer.name} </li>
+          // <div key={customer.id} className={customer.name}>
+          //   {customer.name}
           </div>
         )
       })}
@@ -16,5 +15,5 @@ const Customers = (props) => {
     </div>
   )
 }
-
+// want to list what months they ordered
 export default Customers;
