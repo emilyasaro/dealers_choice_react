@@ -6,8 +6,8 @@ const Customers = (props) => {
       <ul className="customer">
       {props.customers.map((customer) => {
         return (
-          // <div key={customer.id} className={customer.name}>
-          //   {customer.name}
+          <div key={customer.id} className={customer.name}>
+            {customer.name}
           </div>
         )
       })}
