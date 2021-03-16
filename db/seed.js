@@ -25,16 +25,8 @@ const syncAndSeed = async () => {
       Month.create({ name: 'December', flavor1: 'Almond Roca', flavor2: 'Peppermint Bark' })
     ])
     const order1 = await Order.create({
-      customerId: 2,
-      // {
-      //   where: {
-      //     [customers[0].id]: 2
-      //    }}, // returns an empty array w/o [1]
-      monthId: 4
-      // {
-      //   where: {
-      //     [months[0].id]: 4
-      //   }}
+      customerId: 1,
+      monthId: 3
     })
     // const order1 = Order.create();
     // await order1.getMonth(months)

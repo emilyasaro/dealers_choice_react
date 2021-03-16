@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import axios from 'axios';
 import Months from './Months.js'
 import Customers from './Customers.js';
+import { BrowserRouter } from 'react-router-dom';
 
 
 
@@ -15,13 +16,13 @@ class Main extends React.Component{
       customers: []
 
     }
-    console.log(this.state)
+    // console.log(this.state)
 
   }
   async componentDidMount(){
     const months = (await axios.get('/api/months')).data;
     const customers = (await axios.get('/api/customers')).data;
-    console.log(months);
+    // console.log(months);
     this.setState({ months, customers });
   }
 
@@ -39,6 +40,6 @@ class Main extends React.Component{
 
 
 
-ReactDOM.render(<Main/>, document.querySelector('#root'));
+ReactDOM.render(<BrowserRouter> <Main/></BrowserRouter>, document.querySelector('#root'));
 
 export default Main

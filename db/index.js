@@ -55,6 +55,7 @@ Order.init({
 Order.belongsTo( Month );
 // Month.hasMany( Order );
 Order.belongsTo( Customer );
+Customer.hasMany( Order, { as: "Orders" });
 
 // check on the type of magic method for returning both month and customer information
 // Order.getDetails = function (id) {
