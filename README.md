@@ -1,9 +1,7 @@
 # dealers_choice_react
 
 CURRENT ISSUES:
-- can't get monthId and customerId on seeded order data in the db
-- webpack is not rebuilding / watching file changes
-  - I have restarted my computer, uninstalled and reinstalled webpack and webpack-cli
+
 - can't use a <br> tag within my mapping in Customers.js
 
 
@@ -15,6 +13,12 @@ CURRENT ISSUES:
   - error: props are undefined
 NOTE: Needed an additional () wrapping around the axios get
 
+- can't get monthId and customerId on seeded order data in the db
+NOTE: needed to capitalize m and c in "MonthId" and "CustomerId"
+
+- webpack is not rebuilding / watching file changes
+  - I have restarted my computer, uninstalled and reinstalled webpack and webpack-cli
+NOTE: needed to add "--" to the build:dev script
 
 Goal:
 KB Creamery order site:
